@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-gea$wib6rgpo#5r%3(5r1e!-k5+pf15!krgm$$r!l0z1$0c+)5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "18.224.88.43",
+    "localhost"
+    ]
 
 
 # Application definition
