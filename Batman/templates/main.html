@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>html{visibility: hidden;opacity:0;}</style>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'Batman/style.css' %}">
+    <style>html{visibility: visible;opacity:1;}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+    <div class="FancyBox">
+        {% block header %}
+        {% endblock %}
+    </div>
+    <div class="LinkBubble">
+        <div class="LinkBubble">
+            <li><a href="\">Home </a></li>
+        </div>
+        <div class="LinkBubble">
+            <li><a href="George">George Page </a></li>
+        </div>
+        <div class="LinkBubble">
+            <li><a href="Interactive">Interactive </a></li>
+        </div>
+    </div>
+
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

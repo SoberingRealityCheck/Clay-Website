@@ -1,0 +1,34 @@
+{% extends "main.html" %}
+
+{% block title %}
+    Interactive Comments
+{% endblock %}
+
+{% block header %}
+<h1>Theoretically, This Page Should Be Interactive?</h1>
+{% endblock %}
+
+{% block content %}
+    <div class = "FancyBox">
+        <ul>
+            {% for x in mycomments %}
+                    <div class = "FancyBox">
+                        <h1> "{{x.text}}" </h1> <br><br>
+                        <p> -  {{x.firstname}} {{x.lastname}}<p>
+                    </div>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class = "CommentInput">
+        <form action="Interactive">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <div class = "TextBox">
+                <input type="text" id="comment_text" name="comment_text"><br><br>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+{% endblock %}

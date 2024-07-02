@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+
+{% block title %}
+    George Page.
+{% endblock %}
+
+{% block header %}
+    <h1> Welcome to the George Page. </h1>
+{% endblock %}
+
+{% block content %}
+    <div class="FancyBox">
+        {% load static %}
+        <li><a href="\"><img src="{% static 'Batman\SmallGeorge.jpg' %}" alt="George"></a></li>
+    </div>
+    
+{% endblock %}
