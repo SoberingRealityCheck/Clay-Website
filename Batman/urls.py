@@ -12,4 +12,5 @@ urlpatterns = [
     path('', views.Home, name='Home'),
     path('George', views.George, name='George'),
     path('Interactive', views.Interactive, name='Interactive'),
+    path('Myresluger', views.Myresluger, name='Myresluger'),
 ]

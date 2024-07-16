@@ -25,3 +25,6 @@ def Interactive(request):
   }
   return HttpResponse(template.render(context,request))
 
+def Myresluger(request):
+  template = loader.get_template('myresluger.html')
+  return HttpResponse(template.render())
